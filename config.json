@@ -1,0 +1,18 @@
+{
+    "data":{
+        "root_dir": "data",
+        "num_workers": 4,
+        "crop_size": 128,
+        "batch_size":64
+    },
+    "train":{
+        "lr":1e-5,
+        "epochs":200,
+        "checkpoint_interval": 10
+    },
+    "test":{
+        "batch_size":4,
+        "test_interval": 10,
+        "img_to_display": 3
+    }
+}
