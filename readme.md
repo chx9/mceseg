@@ -8,7 +8,7 @@ The MCE-Net (Myocardial Contrast Echocardiography Network) Segmentation Algorith
 ![original](imgs/deeplabv3+.png)
 ## improved ASPP
 The ASPP (Atrous Spatial Pyramid Pooling) module is a crucial component in DeepLabV3+, capturing multi-scale semantic information by employing different dilation rates. However, despite its excellent performance in capturing multi-scale features, the module uses a simple concatenation operation when fusing these features. This approach may not fully exploit and leverage the correlations between features at different scales. Therefore, we introduce a channel attention module and a multi-scale feature attention aggregation module .
-![improved aspp ](imgs/aspp_improved_en.png)
+![improved aspp ](imgs/aspp_improved.png)
 ### Channel Attention Module
 Introducing a channel attention module significantly enhances feature representation by dynamically adjusting the importance of different channels within the maps. This adaptive mechanism allows the network to selectively emphasize informative channels, contributing to a more effective and discriminative representation of features.
 
@@ -37,4 +37,3 @@ $Z_k$ represents the result  feature map, $X_i^k$ denotes the feature in the $i$
 |      | A4C |**0.78**                | 0.75                | 0.71  | 0.72   | 0.72  |
 ## segmentation result
 ![result](imgs/segment_result_.png)
-
